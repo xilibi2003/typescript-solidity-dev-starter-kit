@@ -1,49 +1,55 @@
 # Typescript Solidity Dev Starter Kit
 
-This is a starter kit for developing, testing, and deploying smart contracts with a full Typescript environment. This stack uses [Buidler](https://buidler.dev) as the platform layer to orchestrate all the tasks. [Ethers](https://docs.ethers.io/ethers.js/html/index.html) is used for all Ethereum interactions and testing.
 
-[Blog Post](https://medium.com/@rahulsethuram/the-new-solidity-dev-stack-buidler-ethers-waffle-typescript-tutorial-f07917de48ae)
+用于 Solidity智能合约开发的测试和部署的 Typescript 环境入门套件，使用[Buidler](https://buidler.dev)作为技术栈的平台层来协调所有任务。
 
-## Using this Project
+使用[Ethers](https://learnblockchain.cn/docs/ethers.js/) 用于所有以太坊的交互和测试。
 
-Clone this repository, then install the dependencies with `npm install`. Build everything with `npm run build`. https://buidler.dev has excellent docs, and can be used as reference for extending this project.
+[博客文章](https://learnblockchain.cn/article/1196)
 
-## Available Functionality
 
-### Build Contracts
+## 使用项目
+
+克隆之后，用 `npm install` 安装依赖。
+用  `npm run build` 构建， https://buidler.dev 有很棒的文档，可以用来扩展项目。
+
+
+## 功能
+
+### 编译及构建
 
 `npm run compile`
 
-### Generate TypeChain Typings
+### 生成TypeChain类型
 
 `npm run build`
 
-### Run Contract Tests
+### 测试合约
 
 `npm run test`
 
-Note: As is, the tests fail on purpose. This is to show the Solidity stack traces that Buidler enables!
+注意: 测试故意失败是为了演示Buidler的Solidity堆栈跟踪！
 
-### Run Coverage Report for Tests
+### 运行测试覆盖报告
 
 `npm run coverage`
 
 Note: The branch coverage is 75 %.
 
-### Deploy to Ethereum
+### 部署到Ethereum
 
-Create/modify network config in `buidler.config.ts` and add API key and private key, then run:
+创建/修改`buidler.config.ts`  中的网络，添加API key 和私钥，然后运行:
 
 `npx buidler run --network rinkeby scripts/deploy.ts`
 
-### Verify on Etherscan
+### Etherscan上验证代码
 
-Add Etherscan API key to `buidler.config.ts`, then run:
+在 `buidler.config.ts` 加入 Etherscan API key，然后运行:
 
 `npx buidler verify-contract --contract-name Counter --address <DEPLOYED ADDRESS>`
 
-## Enhancement Wish List
+## 改进愿望
 
-- Better migrations strategy (Buidler working on this)
+- 更好的迁移策略 (Buidler 已经在为此努力)
 
-PRs and feedback welcome!
+
